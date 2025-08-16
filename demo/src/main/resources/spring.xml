@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dev" class="com.cmt.Dev" autowire="byType" >
+        <!-- <constructor-arg ref="lap"/>
+        <property name="desktop" ref="desk"></property> -->
+    </bean>
+
+    <bean id="lap" class="com.cmt.Laptop" primary="true">
+        <!-- <constructor-arg index="0" value="HP" />
+        <constructor-arg index="1" value="Pavilion" /> -->
+    </bean>
+
+    <bean id="desk" class="com.cmt.Desktop"></bean>
+    
+</beans>
